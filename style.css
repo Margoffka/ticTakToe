@@ -7,6 +7,7 @@ body {
     rgba(151, 156, 203, 1) 100%
   );
   overflow-x: hidden;
+  font-size: 1.5vw;
 }
 
 .body-container {
@@ -15,26 +16,30 @@ body {
   justify-content: center;
   height: 100vh;
   flex-direction: column;
+  color: white;
 }
 
 .cell {
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
   border: 2px solid;
-  box-shadow: 0 0 0 2px;
+  box-shadow: 0 0 0 2px white;
   font-size: 30px;
   cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
+  color: black;
+  border-color: white;
 }
 
 .cell-image {
-  max-width: 250px;
-  max-height: 250px;
+  max-width: 80%;
+  max-height: 80%;
 }
 
 #gameContainer {
+  margin: 100px;
   font-family: "Permanent Marker", cursive;
   text-align: center;
 }
@@ -49,7 +54,7 @@ body {
 
 #restartBtn {
   padding: 8px 30px;
-  font-size: 16px;
+  font-size: 24px;
   border-radius: 5px;
   background-color: #ffd25d;
 }

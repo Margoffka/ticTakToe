@@ -26,7 +26,7 @@ const winConditions = [
   [2, 4, 6],
 ];
 let options = ["", "", "", "", "", "", "", "", ""];
-let currentPlayer = "X";
+let currentPlayer = "You";
 let running = false;
 
 initializeGame();
@@ -37,7 +37,7 @@ function initializeGame() {
     cell.addEventListener("click", cellClicked);
   });
   restartBtn.addEventListener("click", restartGame);
-  statusText.textContent = `${currentPlayer}'s turn`;
+  statusText.textContent = `${currentPlayer}r turn`;
   running = true;
 }
 function cellClicked() {
@@ -73,16 +73,16 @@ function checkWinner() {
   }
 
   if (roundWon) {
-    statusText.textContent = `${currentPlayer} wins!`;
+    statusText.textContent = `${currentPlayer} win!`;
   } else if (!options.includes("")) {
     statusText.textContent = `The End!`;
     running = false;
   }
 }
 function restartGame() {
-  currentPlayer = "X";
+  currentPlayer = "You";
   options = ["", "", "", "", "", "", "", "", ""];
-  statusText.textContent = `${currentPlayer}'s turn`;
+  statusText.textContent = `${currentPlayer}r turn`;
   cells.forEach((cell) => {
     cell.textContent = "";
     cell.innerHTML = imgSrc;
