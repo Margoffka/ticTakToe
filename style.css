@@ -14,23 +14,24 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: 100%;
   flex-direction: column;
   color: white;
 }
 
 .cell {
-  width: 250px;
-  height: 250px;
+  display: flex;
+  height: 175px;
+  width: 196px;
   border: 2px solid;
   box-shadow: 0 0 0 2px white;
-  font-size: 30px;
+  font-size: 24px;
   cursor: pointer;
-  display: flex;
   justify-content: center;
   align-items: center;
   color: black;
   border-color: white;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 .cell-image {
@@ -39,22 +40,23 @@ body {
 }
 
 #gameContainer {
-  margin: 100px;
   font-family: "Permanent Marker", cursive;
   text-align: center;
+  height: 100%;
 }
 
 #cellContainer {
-  display: grid;
-  grid-template-columns: repeat(3, auto);
-  width: 100%;
-  margin: auto;
-  background-color: rgba(255, 255, 255, 0.5);
+  display: flex;
+  flex-wrap: wrap;
+  width: 600px;
+  margin: 0 auto;
 }
 
 #restartBtn {
   padding: 8px 30px;
   font-size: 24px;
   border-radius: 5px;
-  background-color: #ffd25d;
+  border: 1px solid white;
+  background-color: rgb(172 88 209);
+  color: white;
 }
