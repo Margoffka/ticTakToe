@@ -4,15 +4,15 @@ const restartBtn = document.querySelector("#restartBtn");
 let imgSrc = '<img src="images/present.png" alt="present" class="cell-image">';
 
 const words = [
-  "Apple",
-  "Banana",
-  "Cherry",
-  "Date",
-  "Fig",
-  "Grape",
-  "Lemon",
-  "Mango",
-  "Orange",
+  "Easter",
+  "Christmas",
+  "Victory day",
+  "Women’s day",
+  "Birthday",
+  "New Year",
+  "Father’s Day",
+  "Valentine’s Day",
+  "Mother’s Day",
 ];
 
 const winConditions = [
@@ -74,12 +74,9 @@ function checkWinner() {
 
   if (roundWon) {
     statusText.textContent = `${currentPlayer} wins!`;
-    running = false;
   } else if (!options.includes("")) {
-    statusText.textContent = `Draw!`;
+    statusText.textContent = `The End!`;
     running = false;
-  } else {
-    changePlayer();
   }
 }
 function restartGame() {
